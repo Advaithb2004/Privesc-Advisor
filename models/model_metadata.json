@@ -1,0 +1,236 @@
+{
+  "features": [
+    "sudo_all",
+    "sudo_vim",
+    "sudo_find",
+    "sudo_python",
+    "sudo_perl",
+    "sudo_awk",
+    "sudo_env",
+    "sudo_nmap",
+    "suid_bash",
+    "suid_find",
+    "suid_python",
+    "cap_setuid",
+    "cap_dac_override",
+    "writable_passwd",
+    "writable_sudoers",
+    "writable_cron",
+    "kernel_dirty_cow",
+    "kernel_dirty_pipe",
+    "vuln_pwnkit",
+    "nfs_no_root_squash"
+  ],
+  "best_model": "Random Forest",
+  "selection_metric": "mean 5-fold cross-validation weighted F1-score on training split",
+  "cv_folds": 5,
+  "cv_results": {
+    "Logistic Regression": {
+      "accuracy": {
+        "mean": 0.9057291666666668,
+        "std": 0.014662175271103355,
+        "fold_scores": [
+          0.9010416666666666,
+          0.9166666666666666,
+          0.9244791666666666,
+          0.8880208333333334,
+          0.8984375
+        ]
+      },
+      "precision_weighted": {
+        "mean": 0.9104303701450835,
+        "std": 0.013259972250434956,
+        "fold_scores": [
+          0.9093347345612539,
+          0.9206441001532584,
+          0.9251761905252057,
+          0.891584501956019,
+          0.9054123235296808
+        ]
+      },
+      "recall_weighted": {
+        "mean": 0.9057291666666668,
+        "std": 0.014662175271103355,
+        "fold_scores": [
+          0.9010416666666666,
+          0.9166666666666666,
+          0.9244791666666666,
+          0.8880208333333334,
+          0.8984375
+        ]
+      },
+      "f1_weighted": {
+        "mean": 0.9052679646939061,
+        "std": 0.014395314872768305,
+        "fold_scores": [
+          0.9020583950550628,
+          0.9164651337143114,
+          0.9227805571704022,
+          0.8869770365999506,
+          0.8980587009298042
+        ]
+      }
+    },
+    "Random Forest": {
+      "accuracy": {
+        "mean": 0.9239583333333334,
+        "std": 0.007457198470456417,
+        "fold_scores": [
+          0.9296875,
+          0.9192708333333334,
+          0.9140625,
+          0.9322916666666666,
+          0.9244791666666666
+        ]
+      },
+      "precision_weighted": {
+        "mean": 0.9271206341919352,
+        "std": 0.007656564389961999,
+        "fold_scores": [
+          0.9327466375804706,
+          0.9221616841386863,
+          0.9168236543853321,
+          0.9355309609845257,
+          0.9283402338706614
+        ]
+      },
+      "recall_weighted": {
+        "mean": 0.9239583333333334,
+        "std": 0.007457198470456417,
+        "fold_scores": [
+          0.9296875,
+          0.9192708333333334,
+          0.9140625,
+          0.9322916666666666,
+          0.9244791666666666
+        ]
+      },
+      "f1_weighted": {
+        "mean": 0.9240048875948477,
+        "std": 0.00750273021768997,
+        "fold_scores": [
+          0.9300767714830216,
+          0.9187702984104643,
+          0.9145707648565882,
+          0.932482999389994,
+          0.9241236038341704
+        ]
+      }
+    },
+    "XGBoost": {
+      "accuracy": {
+        "mean": 0.9229166666666666,
+        "std": 0.010351357767891542,
+        "fold_scores": [
+          0.9166666666666666,
+          0.9192708333333334,
+          0.9140625,
+          0.9401041666666666,
+          0.9244791666666666
+        ]
+      },
+      "precision_weighted": {
+        "mean": 0.9268523120423218,
+        "std": 0.00910909204506683,
+        "fold_scores": [
+          0.9216510225169282,
+          0.9219777998210703,
+          0.9203317506308873,
+          0.9422515707671959,
+          0.9280494164755275
+        ]
+      },
+      "recall_weighted": {
+        "mean": 0.9229166666666666,
+        "std": 0.010351357767891542,
+        "fold_scores": [
+          0.9166666666666666,
+          0.9192708333333334,
+          0.9140625,
+          0.9401041666666666,
+          0.9244791666666666
+        ]
+      },
+      "f1_weighted": {
+        "mean": 0.9232896448636124,
+        "std": 0.010079590176749434,
+        "fold_scores": [
+          0.9176629409956393,
+          0.9190280041985978,
+          0.9153112357098533,
+          0.940387141949642,
+          0.9240589014643291
+        ]
+      }
+    }
+  },
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.9083333333333333,
+      "precision": 0.9108996704195356,
+      "recall": 0.9083333333333333,
+      "f1": 0.9084189511008239
+    },
+    "Random Forest": {
+      "accuracy": 0.9270833333333334,
+      "precision": 0.9298207352229091,
+      "recall": 0.9270833333333334,
+      "f1": 0.9273349527600124
+    },
+    "XGBoost": {
+      "accuracy": 0.9270833333333334,
+      "precision": 0.9301710033123076,
+      "recall": 0.9270833333333334,
+      "f1": 0.9270850658118379
+    }
+  },
+  "classes": [
+    "cap_dac_override",
+    "cap_setuid",
+    "dirty_cow",
+    "dirty_pipe",
+    "nfs_root_squash",
+    "no_path",
+    "pwnkit",
+    "sudo_awk",
+    "sudo_env",
+    "sudo_find",
+    "sudo_nmap",
+    "sudo_perl",
+    "sudo_python",
+    "sudo_vim",
+    "suid_bash",
+    "suid_find",
+    "suid_python",
+    "writable_cron",
+    "writable_passwd",
+    "writable_sudoers"
+  ],
+  "dataset_rows": 2400,
+  "samples_per_class": {
+    "cap_dac_override": 120,
+    "cap_setuid": 120,
+    "dirty_cow": 120,
+    "dirty_pipe": 120,
+    "nfs_root_squash": 120,
+    "no_path": 120,
+    "pwnkit": 120,
+    "sudo_awk": 120,
+    "sudo_env": 120,
+    "sudo_find": 120,
+    "sudo_nmap": 120,
+    "sudo_perl": 120,
+    "sudo_python": 120,
+    "sudo_vim": 120,
+    "suid_bash": 120,
+    "suid_find": 120,
+    "suid_python": 120,
+    "writable_cron": 120,
+    "writable_passwd": 120,
+    "writable_sudoers": 120
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "evaluation": "stratified 5-fold CV on 80% training split plus one stratified 20% hold-out test evaluation",
+  "dataset_type": "controlled synthetic benchmark"
+}

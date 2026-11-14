@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PrivEsc Advisor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-icon">🔒</span><strong>PrivEsc Advisor</strong><span class="authorized">AUTHORIZED USE ONLY</span></div>
+  <div class="topnote">Explainable AI&nbsp; · &nbsp;SHAP Attribution</div>
+</header>
+
+<main class="layout">
+  <aside class="sidebar">
+    <div class="warning"><b>⚠ This tool is for authorized penetration testing, CTF challenges, and security research only.</b> Running privilege escalation techniques on systems without explicit written permission is illegal.</div>
+    <div class="input-card">
+      <div class="tabs"><span class="active">LinPEAS / Raw Output</span><span>Manual Checklist</span></div>
+      <div class="input-body">
+        <div class="load-row"><button id="sample">Load demo</button><label class="file-btn">Load file<input type="file" id="file" accept=".txt,.log"></label></div>
+        <textarea id="input" placeholder="Paste LinPEAS output here..."></textarea>
+        <div class="manual-grid">
+          <label>OS / DISTRO<input id="os" placeholder="e.g. Ubuntu 20.04"></label>
+          <label>HOSTNAME<input id="host" placeholder="e.g. target-box"></label>
+          <label>KERNEL VERSION<input id="kernel" placeholder="e.g. 4.4.0-21-generic"></label>
+          <label>CURRENT USER<input id="user" placeholder="e.g. www-data"></label>
+        </div>
+        <button id="go" class="analyze">⚡ Analyze Target</button>
+      </div>
+    </div>
+  </aside>
+
+  <section class="results">
+    <div id="out" class="empty-state">Paste LinPEAS output and click <b>Analyze Target</b>.</div>
+  </section>
+</main>
+<footer>PrivEsc Advisor · Explainable privilege escalation recommendation for authorized labs · Best model: {{meta.best_model}} · 2,400 synthetic training scenarios</footer>
+<script src="/static/app.js?v=shap-path-scale-2"></script>
+</body>
+</html>
