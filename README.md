@@ -34,7 +34,7 @@ The system follows the pipeline below:
 6. **Explainability:** Uses SHAP to identify the features contributing to individual predictions.
 7. **Risk Assessment:** Calculates a heuristic risk score based on detected configuration indicators.
 8. **Final Output:** Displays recommendations, explanations, risk levels, and mitigation strategies.
-[https://github.com/Advaithb2004/Privesc-Advisor/blob/main/privesc_worklow.png?raw=true](https://github.com/Advaithb2004/Privesc-Advisor/blob/e91fc27b67d03e575e96a89e046df93b7ee4fe36/privesc_worklow.png)
+![image alt](https://github.com/Advaithb2004/Privesc-Advisor/blob/e91fc27b67d03e575e96a89e046df93b7ee4fe36/privesc_worklow.png)
 ## 4. Project Structure
 
 The repository is organized into the following directories:
