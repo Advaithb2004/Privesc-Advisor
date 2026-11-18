@@ -36,6 +36,7 @@ The system follows the pipeline below:
 8. **Final Output:** Displays recommendations, explanations, risk levels, and mitigation strategies.
 
 ![PrivEsc Advisor Workflow](https://raw.githubusercontent.com/Advaithb2004/Privesc-Advisor/main/privesc_workflow.png)
+[View Detailed System Architecture (PDF)](architecture/priv_arch(1).pdf)
 
 ## 4. Project Structure
 
