@@ -35,7 +35,7 @@ The system follows the pipeline below:
 7. **Risk Assessment:** Calculates a heuristic risk score based on detected configuration indicators.
 8. **Final Output:** Displays recommendations, explanations, risk levels, and mitigation strategies.
 
-![PrivEsc Advisor Workflow](privesc_workflow.png)
+![PrivEsc Advisor Workflow](./privesc_workflow.png)
 
 ## 4. Project Structure
 
